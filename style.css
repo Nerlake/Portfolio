@@ -1,0 +1,40 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+#accueil{
+    background-image: url("bg.jpg");
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+#accueil h1{
+    font-size: 5rem;
+}
+
+#accueil h2{
+    font-size: 2rem;
+}
+
+/* assombrir l'image de fond  sans le texte*/
+#accueil::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.header{
+    display: flex;
+}
