@@ -12,24 +12,174 @@
 
 <body>
     <div id="accueil">
-        <h1>Léo HOTZ</h1>
-        <h2>Développeur WEB</h2>
+        <div id="accueil_container">
+            <h1 id="accueil_h1">Léo HOTZ</h1>
+            <h2 id="accueil_h2">Développeur WEB</h2>
+        </div>
     </div>
 
     <header class="header">
         <span class="header_logo">Portfolio de Léo HOTZ</span>
         <nav class="header_nav">
             <ul class="header_list">
-                <li class="header_list_item"><a href="index.html">Compétences</a></li>
-                <li class="header_list_item"><a href="experience.html">Expérience Professionnel</a></li>
-                <li class="header_list_item"><a href="about.html">Projets</a></li>
-                <li class="header_list_item"><a href="contact.html">Contact</a></li>
+                <a class="header_list_item active_item" href="#presentation">
+                    <li>Présentation</li>
+                </a>
+                <a class="header_list_item" href="#competences">
+                    <li>Compétences</li>
+                </a>
+                <a class="header_list_item" href="#projets">
+                    <li>Projets</li>
+                </a>
+                <a class="header_list_item" href="#contact">
+                    <li>Contact</li>
+                </a>
             </ul>
         </nav>
     </header>
 
     <main>
+        <div class="grey_block" id="presentation">
+            <h2 class="subtitle">Présentation</h2>
+            <img src="leo.jpg" alt="photo" id="photo_presentation">
+            <p class="presentation_description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam unde eius esse quod rerum dolorem rem
+                incidunt eos tempora sit quasi tempore quo, necessitatibus vitae. Perspiciatis suscipit perferendis nisi
+                quo error sequi debitis nulla vero, voluptatum explicabo neque saepe rem. Est at ea recusandae corrupti
+                placeat sequi quae. Nisi, illo?
+            </p>
+        </div>
+        <div class="white_block" id="competences">
+            <h2 class="subtitle">Compétences</h2>
+            <div class="competences_container">
+                <div class="left_row">
+                    <div class="skill_container">
+                        <span class="skill_name">HTML</span>
+                        <div class="progress-container">
+                            <div class="progress" id="html"></div>
+                        </div>
+                    </div>
+                    <div class="skill_container">
+                        <span class="skill_name">CSS</span>
+                        <div class="progress-container">
+                            <div class="progress" id="css"></div>
+                        </div>
+                    </div>
+                    <div class="skill_container">
+                        <span class="skill_name">JavaScript</span>
+                        <div class="progress-container">
+                            <div class="progress" id="javascript"></div>
+                        </div>
+                    </div>
+                    <div class="skill_container">
+                        <span class="skill_name">React</span>
+                        <div class="progress-container">
+                            <div class="progress" id="react"></div>
+                        </div>
+                    </div>
+                    <div class="skill_container">
+                        <span class="skill_name">C#</span>
+                        <div class="progress-container">
+                            <div class="progress" id="csharp"></div>
+                        </div>
+                    </div>
+                    <div class="skill_container">
+                        <span class="skill_name">Java</span>
+                        <div class="progress-container">
+                            <div class="progress" id="java"></div>
+                        </div>
+                    </div>
+                    <div class="skill_container">
+                        <span class="skill_name">PHP</span>
+                        <div class="progress-container">
+                            <div class="progress" id="php"></div>
+                        </div>
+                    </div>
+                    <div class="skill_container">
+                        <span class="skill_name">Python</span>
+                        <div class="progress-container">
+                            <div class="progress" id="python"></div>
+                        </div>
+                    </div>
+                    <div class="skill_container">
+                        <span class="skill_name">WordPress</span>
+                        <div class="progress-container">
+                            <div class="progress" id="wordpress"></div>
+                        </div>
+                    </div>
+                    <div class="skill_container">
+                        <span class="skill_name">SQL</span>
+                        <div class="progress-container">
+                            <div class="progress" id="sql"></div>
+                        </div>
+                    </div>
+                    <div class="skill_container">
+                        <span class="skill_name">NodeJS</span>
+                        <div class="progress-container">
+                            <div class="progress" id="nodejs"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right_row">
+                    <img src="CV_HOTZ_LEO.png" id="cv" alt="CV">
+                </div>
+            </div>
+
+            <div class="grey_block" id="projets">
+                <h2 class="subtitle">Projets</h2>
+                <div class="projets_container">
+                    <div class="projet">
+                        <img class="projet_image" src="bg_resize.jpg" alt="projet">
+                        <h3>Portfolio</h3>
+                        <p>Portfolio personnel que vous visitez actuellement</p>
+                    </div>
+                    <div class="projet">
+                        <img class="projet_image" src="https://via.placeholder.com/300x200" alt="projet">
+                        <h3>Projet 2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                    </div>
+                    <div class="projet">
+                        <img class="projet_image" src="https://via.placeholder.com/300x200" alt="projet">
+                        <h3>Projet 3</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                    </div>
+                    <div class="projet">
+                        <img class="projet_image" src="https://via.placeholder.com/300x200" alt="projet">
+                        <h3>Projet 4</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                    </div>
+                    <div class="projet">
+                        <img class="projet_image" src="https://via.placeholder.com/300x200" alt="projet">
+                        <h3>Projet 4</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                    </div>
+                    <div class="projet">
+                        <img class="projet_image" src="https://via.placeholder.com/300x200" alt="projet">
+                        <h3>Projet 4</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="white_block" id="contact">
+                <h2 class="subtitle">Contact</h2>
+
+            </div>
+
     </main>
+
+
+    <footer>
+        <div class="rss_container">
+            <a class="rss_item" href="https://github.com/Nerlake" target="_blank">
+                <img src="github.png" alt="github" class="rss_logo">
+            </a>
+            <a class="rss_item" href="https://www.linkedin.com/in/leo-hotz/" target="_blank">
+                <img src="linkedin.png" alt="linkedin" class="rss_logo">
+            </a>
+        </div>
+        <span class="copyright">©2023 Léo HOTZ, Tous droits réservés.</span>
+    </footer>
 
 
 </body>

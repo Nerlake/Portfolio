@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
 }
 
 
 #accueil{
-    background-image: url("bg.jpg");
+    background-image: url("bg2.jpg");
+    background-attachment: fixed;
     display: flex;
     height: 100vh;
     width: 100%;
@@ -16,25 +24,199 @@
     color: white;
 }
 
-#accueil h1{
-    font-size: 5rem;
+#accueil_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: grow 1s ease-in-out;
 }
 
-#accueil h2{
+#accueil_h1{
+    font-size: 5rem;
+    color: white;
+    /* apparition par le haut en fondu */
+
+}
+
+@keyframes grow{
+    0%{
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#accueil_h2{
     font-size: 2rem;
 }
 
 /* assombrir l'image de fond  sans le texte*/
-#accueil::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
-}
 
 .header{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+}
+
+.header_logo{
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.header_list{
+    display: flex;
+    list-style: none;
+}
+
+.header_list_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.header_list_item:hover{
+    background-color: rgba(0, 0, 0, 0.714);
+}
+
+.active_item{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.subtitle{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 20px 0;
+    text-transform: uppercase;
+}
+
+.grey_block{
+    background-color: #f5f5f5;
+    padding: 20px 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 110vh;
+    overflow-y: scroll;
+}
+
+.white_block {
+    background-color: rgb(255, 255, 255);
+    min-height: 100vh;
+    padding: 20px 0;
+}
+
+#photo_presentation{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 3px solid black;
+    object-fit: cover;
+}
+
+.presentation_description{
+    padding: 40px 20%;
+    text-align: center;
+}
+
+.competences_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.right_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cv{
+    width: 400px;
+    height: auto;
+}
+
+.progress-container {
+    height: 0.8rem;
+    width: 32rem;
+    border-radius: 0.4rem;
+
+    background: #000;
+}
+
+.progress-container .progress {
+    height: 100%;
+    width: 0;
+    border-radius: 0.4rem;
+
+    background: #ff4754;
+
+    transition: width 2s ease;
+}
+
+.left_row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.skill_container{
+    display: flex;
+    flex-direction: column;
+}
+
+.projets_container{
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.projet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+}
+
+.projet_image{
+    border: 2px solid black;
+}
+
+footer{
+    display: flex;
+    background-color: #842f2f;
+    height: 180px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.copyright{
+    color: white;
+}
+
+.rss_logo{
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
 }
