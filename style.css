@@ -249,7 +249,7 @@ body{
 
 .progress-container {
     height: 0.8rem;
-    width: 32rem;
+    width: 300px;
     border-radius: 0.4rem;
 
     background: #000;
@@ -269,6 +269,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 30px;
 }
 
@@ -319,13 +320,6 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-.contact_input:disabled{
-    background-color: #e7e3e3;
-    cursor: not-allowed;
-    border: none;
-}
-
-
 .contact_input_area{
     width: 500px;
     height: 200px;
@@ -336,6 +330,13 @@ body{
     font-family: 'Poppins', sans-serif;
         border: none;
 }
+.contact_input:disabled{
+    background-color: #e7e3e3;
+    cursor: not-allowed;
+    border: none;
+}
+
+
 
 .contact_input_area:disabled{
     background-color: #e7e3e3;
@@ -392,4 +393,29 @@ footer{
     .hamburger_button{
         display: flex;
     }
+}
+
+@media screen and (max-width: 600px) {
+.contact_input {
+        width: 95vw;
+
+    }
+
+    .contact_input_area {
+        width: 95vw;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .progress-container {
+        width: 200px;
+    }
+        #cv{
+            width: 200px;
+        }
+
+        .left_row{
+            width: 100%;
+        }
 }
