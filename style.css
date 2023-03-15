@@ -284,6 +284,7 @@ body{
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 10px;
+    gap: 40px;
 }
 
 .projet{
@@ -295,9 +296,26 @@ body{
     align-items: center;
 }
 
-.projet_image{
+.projet_description{
+    text-align: center;
+}
+
+.img_container{
     width: 400px;
-    object-fit: cover;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+        text-align: center;
+}
+
+.projet_image{
+    /* object-fit: cover; */
+    transform: scale(1);
+    /* transform: translateX(-50px); */
+
+    vertical-align: middle;
 }
 
 .projet_image:hover {
@@ -407,6 +425,7 @@ footer{
     }
 
 }
+
 
 @media screen and (max-width: 400px) {
     .progress-container {
