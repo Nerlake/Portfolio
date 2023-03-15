@@ -46,6 +46,12 @@ document.addEventListener('DOMContentLoaded', () => {
     //event listener qui detecte si le button openHamburger est cliqué
     document.querySelector("#openHamburger").addEventListener("click", openHamburger);
 
+    // si j'appuie sur un button ayant la classe .hamburger_list_item, je ferme le hamburger
+    hmbgList.forEach((item) => {
+        item.addEventListener("click", closeHamburger);
+    });
+
+
 
     window.addEventListener('scroll', function () {
         if (window.scrollY > vh) {
