@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const projetsHeight = document.querySelector("#projets").offsetTop;
     const contactHeight = document.querySelector("#contact").offsetTop;
     const headerList = document.querySelectorAll(".header_list_item");
+    const hmbgList = document.querySelectorAll(".hamburger_list_item");
 
 
     function isScrolledToBottom() {
@@ -32,8 +33,18 @@ document.addEventListener('DOMContentLoaded', () => {
         return Math.abs(pageHeight - scrollPosition) < 1;
     }
 
+    function openHamburger() {
+        document.querySelector(".hamburger_container").style.display = "flex";
+    }
 
-    //hauteur en pixel de la class competence
+    function closeHamburger() {
+        document.querySelector(".hamburger_container").style.display = "none";
+    }
+
+    //event listener qui detecte si le button closeHamburger est cliqué
+    document.querySelector("#closeHamburger").addEventListener("click", closeHamburger);
+    //event listener qui detecte si le button openHamburger est cliqué
+    document.querySelector("#openHamburger").addEventListener("click", openHamburger);
 
 
     window.addEventListener('scroll', function () {
