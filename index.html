@@ -12,24 +12,215 @@
 
 <body>
     <div id="accueil">
-        <h1>Léo HOTZ</h1>
-        <h2>Développeur WEB</h2>
+        <div id="accueil_container">
+            <h1 id="accueil_h1">Léo HOTZ</h1>
+            <h2 id="accueil_h2">Développeur WEB</h2>
+        </div>
     </div>
 
     <header class="header">
         <span class="header_logo">Portfolio de Léo HOTZ</span>
         <nav class="header_nav">
             <ul class="header_list">
-                <li class="header_list_item"><a href="index.html">Compétences</a></li>
-                <li class="header_list_item"><a href="experience.html">Expérience Professionnel</a></li>
-                <li class="header_list_item"><a href="about.html">Projets</a></li>
-                <li class="header_list_item"><a href="contact.html">Contact</a></li>
+                <a class="header_list_item active_item" href="#presentation">
+                    <li>Présentation</li>
+                </a>
+                <a class="header_list_item" href="#competences">
+                    <li>Compétences</li>
+                </a>
+                <a class="header_list_item" href="#projets">
+                    <li>Projets</li>
+                </a>
+                <a class="header_list_item" href="#contact">
+                    <li>Contact</li>
+                </a>
             </ul>
+            <button class="hamburger_button" id="openHamburger"><img src="images/burger.png" class="icons"
+                    alt="burger menu"></button>
         </nav>
     </header>
 
+    <div class="hamburger_container">
+
+        <nav class="hamburger_nav">
+            <span class="header_logo">Portfolio de Léo HOTZ</span>
+            <button class="close_button" id="closeHamburger">X</button>
+            <ul class="hamburger_list">
+                <a class="hamburger_list_item" href="#presentation">
+                    <li>Présentation</li>
+                </a>
+                <a class="hamburger_list_item" href="#competences">
+                    <li>Compétences</li>
+                </a>
+                <a class="hamburger_list_item" href="#projets">
+                    <li>Projets</li>
+                </a>
+                <a class="hamburger_list_item" href="#contact">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </nav>
+    </div>
+
+
+
     <main>
+        <div class="grey_block">
+            <div class="presentation_container" id="presentation">
+                <h2 class="subtitle">Présentation</h2>
+                <img src="images/leo.jpg" alt="photo" id="photo_presentation">
+                <p class="presentation_description">
+                    Bonjour, je m'appelle Léo HOTZ et je suis un développeur web junior de 22 ans. Actuellement en
+                    alternance chez Europe
+                    Tech Group, je travaille principalement sur des projets en React et en C#.
+                    <br />
+                    J'ai commencé mon parcours en informatique par un BAC PRO système numérique option réseau, qui m'a
+                    permis d'acquérir les
+                    bases nécessaires pour évoluer dans ce domaine. J'ai ensuite poursuivi mes études en BTS SIO option
+                    développement, où
+                    j'ai approfondi mes compétences en programmation. Pour parfaire mes connaissances, j'ai obtenu une
+                    licence générale en
+                    informatique.
+                    <br />
+                    Je suis passionné par la programmation et je suis toujours en quête de nouvelles technologies pour
+                    enrichir mon
+                    savoir-faire. Grâce à mon expérience en alternance chez Europe Tech Group, j'ai acquis des
+                    compétences en développement
+                    web et en langages de programmation tels que React et C#.
+                    <br />
+                    En tant que développeur, je suis rigoureux et méthodique dans mon travail. Je suis capable de
+                    travailler en équipe pour
+                    répondre aux exigences des projets et de prendre des initiatives pour apporter des solutions
+                    innovantes aux problèmes
+                    rencontrés.
+                </p>
+            </div>
+        </div>
+        <div class="white_block" id="competences">
+            <h2 class="subtitle">Compétences</h2>
+            <div class="competences_container">
+                <div class="left_row">
+                    <div class="skill_container">
+                        <span class="skill_name">HTML</span>
+                        <div class="progress-container">
+                            <div class="progress" id="html"></div>
+                        </div>
+                    </div>
+                    <div class="skill_container">
+                        <span class="skill_name">CSS</span>
+                        <div class="progress-container">
+                            <div class="progress" id="css"></div>
+                        </div>
+                    </div>
+                    <div class="skill_container">
+                        <span class="skill_name">JavaScript</span>
+                        <div class="progress-container">
+                            <div class="progress" id="javascript"></div>
+                        </div>
+                    </div>
+                    <div class="skill_container">
+                        <span class="skill_name">React</span>
+                        <div class="progress-container">
+                            <div class="progress" id="react"></div>
+                        </div>
+                    </div>
+                    <div class="skill_container">
+                        <span class="skill_name">C#</span>
+                        <div class="progress-container">
+                            <div class="progress" id="csharp"></div>
+                        </div>
+                    </div>
+                    <div class="skill_container">
+                        <span class="skill_name">Java</span>
+                        <div class="progress-container">
+                            <div class="progress" id="java"></div>
+                        </div>
+                    </div>
+                    <div class="skill_container">
+                        <span class="skill_name">PHP</span>
+                        <div class="progress-container">
+                            <div class="progress" id="php"></div>
+                        </div>
+                    </div>
+                    <div class="skill_container">
+                        <span class="skill_name">Python</span>
+                        <div class="progress-container">
+                            <div class="progress" id="python"></div>
+                        </div>
+                    </div>
+                    <div class="skill_container">
+                        <span class="skill_name">WordPress</span>
+                        <div class="progress-container">
+                            <div class="progress" id="wordpress"></div>
+                        </div>
+                    </div>
+                    <div class="skill_container">
+                        <span class="skill_name">SQL</span>
+                        <div class="progress-container">
+                            <div class="progress" id="sql"></div>
+                        </div>
+                    </div>
+                    <div class="skill_container">
+                        <span class="skill_name">NodeJS</span>
+                        <div class="progress-container">
+                            <div class="progress" id="nodejs"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right_row">
+                    <a href="images/CV_HOTZ_LEO.png"><img src="images/CV_HOTZ_LEO.png" id="cv" alt="CV"></a>
+                    <a href="images/CV_HOTZ_LEO.png" download="CV_HOTZ_LEO.png"><button class="button">Télécharger mon
+                            CV</button></a>
+                </div>
+            </div>
+
+            <div class="grey_block" id="projets">
+                <h2 class="subtitle">Projets</h2>
+                <div class="projets_container">
+                    <div class="projet">
+                        <a class="img_container" href="https://nerlake.github.io/Portfolio" target="_blank"><img
+                                class="projet_image" src="images/bg_resize.jpg" alt="projet"></a>
+                        <h3>Portfolio</h3>
+                        <p class="projet_description">Portfolio personnel développé en
+                            HTML, CSS et JS en 2023</p>
+                    </div>
+                    <div class="projet">
+                        <a class="img_container" href="https://startupdeterritoire.alsace/" target="_blank">
+                            <img class="projet_image" src="images/sut.png" alt="projet">
+                        </a>
+                        <h3>Start-Up De Territoire Alsace</h3>
+                        <p class="projet_description">Site web WordPress réalisé pour Start-Up De Territoire Alsace en
+                            2021</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="white_block" id="contact">
+                <h2 class="subtitle">Contact</h2>
+                <form class="contact_container">
+                    <input type="text" placeholder="Nom" class="contact_input" disabled>
+                    <input type="text" placeholder="Adresse Email" class="contact_input" disabled>
+                    <textarea disabled name="message" id="message" cols="30" rows="10" placeholder="Message"
+                        class="contact_input_area"></textarea>
+                    <button type="submit" class="button" disabled>Envoyer</button>
+                </form>
+
+            </div>
+
     </main>
+
+
+    <footer>
+        <div class="rss_container">
+            <a class="rss_item" href="https://github.com/Nerlake" target="_blank">
+                <img src="images/github.png" alt="github" class="rss_logo">
+            </a>
+            <a class="rss_item" href="https://www.linkedin.com/in/leo-hotz/" target="_blank">
+                <img src="images/linkedin.png" alt="linkedin" class="rss_logo">
+            </a>
+        </div>
+        <span class="copyright">©2023 Léo HOTZ, Tous droits réservés.</span>
+    </footer>
 
 
 </body>
