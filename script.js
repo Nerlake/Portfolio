@@ -22,6 +22,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const contactHeight = document.querySelector("#contact").offsetTop;
     const headerList = document.querySelectorAll(".header_list_item");
 
+
+    function isScrolledToBottom() {
+        // hauteur totale de la page
+        const pageHeight = document.documentElement.scrollHeight;
+        // position verticale actuelle de la fenêtre de visualisation
+        const scrollPosition = window.innerHeight + window.pageYOffset;
+        // vérifie si la position verticale actuelle est proche de la hauteur totale de la page
+        return Math.abs(pageHeight - scrollPosition) < 1;
+    }
+
+
     //hauteur en pixel de la class competence
 
 
@@ -51,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
             headerList[2].classList.add("active_item");
             headerList[3].classList.remove("active_item");
         }
-        if (window.scrollY > contactHeight - navbarHeight - 1) {
+        if (isScrolledToBottom()) {
             headerList[0].classList.remove("active_item");
             headerList[1].classList.remove("active_item");
             headerList[2].classList.remove("active_item");
@@ -74,8 +85,6 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelector("#sql").style.width = "80%";
             document.querySelector("#nodejs").style.width = "70%";
         }
-
-
     });
 });
 
