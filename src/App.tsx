@@ -1,10 +1,9 @@
 import "./App.css";
-import { Button } from "./components/ui/button";
 
 function App() {
   return (
     <>
-      <Button variant="outline">Click me!</Button>
+      <h1>Portfolio de Léo HOTZ</h1>
     </>
   );
 }
